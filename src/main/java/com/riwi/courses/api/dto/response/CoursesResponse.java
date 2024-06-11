@@ -1,5 +1,6 @@
 package com.riwi.courses.api.dto.response;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,9 +12,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CoursesResponse {
     
-    private int courseId;
+    private Long courseId;
     private String courseName;
     private String description;
-    private int instructorId;
+    private UsersResponse instructorId;
 
 }

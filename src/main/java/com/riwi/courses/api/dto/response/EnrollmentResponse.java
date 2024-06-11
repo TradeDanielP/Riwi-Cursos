@@ -1,6 +1,6 @@
 package com.riwi.courses.api.dto.response;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,9 +13,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EnrollmentResponse {
     
-    private int enrollmentId;
-    private int userId;
-    private int courseId;
-    private LocalDate enrollmenDate;
+    private Long enrollmentId;
+    private UsersResponse userId;
+    private CoursesResponse courseId;
+    private Date enrollmenDate;
 
 }

@@ -1,5 +1,6 @@
 package com.riwi.courses.api.dto.response;
 
+
 import com.riwi.courses.util.enums.ROLE;
 
 import lombok.AllArgsConstructor;
@@ -13,7 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UsersResponse {
     
-    private int userId;
+    private Long userId;
     private String username;
     private String email;
     private String fullName;

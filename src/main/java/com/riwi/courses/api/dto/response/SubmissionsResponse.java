@@ -1,6 +1,7 @@
 package com.riwi.courses.api.dto.response;
 
-import java.time.LocalDate;
+import java.math.BigDecimal;
+import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,11 +14,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class SubmissionsResponse {
     
-    private int submissionId;
+    private Long submissionId;
     private String content;
-    private LocalDate submissionDate;
-    private double grade;
-    private int userId;
-    private int assignmentId;
+    private Date submissionDate;
+    private BigDecimal grade;
+    private UsersResponse userId;
+    private AssignmentsResponse assignmentId;
 
 }

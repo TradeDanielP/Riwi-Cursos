@@ -1,6 +1,6 @@
 package com.riwi.courses.api.dto.response;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,10 +13,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class AssignmentsResponse {
     
-    private int assignmentId;
+    private Long assignmentId;
     private String assignmentTitle;
     private String description;
-    private LocalDate dueDate;
-    private int lessonId;
+    private Date dueDate;
+    private LessonsResponse lessonId;
 
 }

@@ -11,9 +11,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class LessonsResponse {
     
-    private String lessonId;
+    private Long lessonId;
     private String lessonTitle;
     private String content;
-    private int courseId;
+    private CoursesResponse courseId;
 
 }
